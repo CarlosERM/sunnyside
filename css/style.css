@@ -1,0 +1,110 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+:root {
+  /* Primary */
+
+  --soft-red: hsl(7, 99%, 70%);
+  --yellow: hsl(51, 100%, 49%);
+  --dark-desaturated-cyan: hsl(167, 40%, 24%); /* (graphic design text) */
+  --dark-blue: hsl(198, 62%, 26%); /* (photography text) */
+  --dark-moderate-cyan: hsl(168, 34%, 41%);
+
+  /* Neutral */
+  --very-dark-desaturated-blue: hsl(212, 27%, 19%);
+  --very-dark-grayish-blue: hsl(213, 9%, 39%);
+  --dark-grayish-blue: hsl(232, 10%, 55%);
+  --grayish-blue: hsl(210, 4%, 67%);
+  --white: hsl(0, 0%, 100%);
+}
+html {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Fraunces", serif;
+  /* font-family: "Barlow", sans-serif; */
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.top {
+  background-image: url("../images/mobile/image-header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.top__navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 25px;
+}
+.navigation__logo {
+  width: 7.7rem;
+}
+.navigation__hamburguer {
+  width: 1.4375rem;
+}
+.top__navlinks {
+  display: none;
+}
+/* H1 */
+.title {
+  color: white;
+  font-weight: 900;
+  font-size: 2.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.4063rem;
+  margin-top: 3.5rem;
+  padding: 0rem;
+  line-height: 3.1rem;
+}
+.top__arrow {
+  margin-top: 49px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-bottom: 130px;
+}
+h2 {
+  font-weight: 900;
+  font-size: 32px;
+  text-align: center;
+  padding: 62px 2px 24px 2px;
+
+  line-height: 39px;
+  color: var(--very-dark-desaturated-blue);
+}
+.text {
+  font-family: "Barlow", sans-serif;
+  color: var(--dark-grayish-blue);
+  font-size: 18px;
+  text-align: center;
+  line-height: 30px;
+  padding: 0 10px;
+  font-weight: 900;
+}
+.link {
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+  margin-top: 37px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  font-size: 15px;
+  color: var(--very-dark-desaturated-blue);
+  padding-bottom: 70px;
+}
