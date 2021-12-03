@@ -1,10 +1,11 @@
 .attribution {
-  font-size: 11px;
+  font-size: 0.6875rem;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
 :root {
   /* Primary */
 
@@ -28,6 +29,10 @@ body {
   font-family: "Fraunces", serif;
   /* font-family: "Barlow", sans-serif; */
 }
+.padding {
+  padding-left: 1.4375rem;
+  padding-right: 1.4375rem;
+}
 *,
 *::after,
 *::before {
@@ -48,7 +53,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 32px 25px;
+  padding: 2rem 1.5625rem;
 }
 .navigation__logo {
   width: 7.7rem;
@@ -72,39 +77,160 @@ img {
   line-height: 3.1rem;
 }
 .top__arrow {
-  margin-top: 49px;
+  margin-top: 3.0625rem;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  padding-bottom: 130px;
+  padding-bottom: 8.125rem;
 }
 h2 {
   font-weight: 900;
-  font-size: 32px;
+  font-size: 2rem;
   text-align: center;
-  padding: 62px 2px 24px 2px;
+  padding: 3.875rem 0.125rem 1.5rem 0.125rem;
 
-  line-height: 39px;
+  line-height: 2.4375rem;
   color: var(--very-dark-desaturated-blue);
 }
 .text {
   font-family: "Barlow", sans-serif;
   color: var(--dark-grayish-blue);
-  font-size: 18px;
+  font-size: 1.125rem;
   text-align: center;
-  line-height: 30px;
-  padding: 0 10px;
+  line-height: 1.875rem;
+  padding: 0 0.625rem;
   font-weight: 900;
 }
 .link {
-  text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   display: block;
-  margin-top: 37px;
+  margin: 2.3125rem auto 4.375rem auto;
   font-weight: 900;
-  letter-spacing: 1px;
-  font-size: 15px;
+  letter-spacing: 0.0625rem;
+  font-size: 0.9375rem;
   color: var(--very-dark-desaturated-blue);
-  padding-bottom: 70px;
+  position: relative;
+  width: 8.125rem;
+  text-align: center;
+}
+.link::after {
+  content: "";
+  display: block;
+  width: 8.375rem;
+  height: 0.7rem;
+  background-color: var(--yellow);
+  border-radius: 1rem;
+  position: absolute;
+  top: 0.5625rem;
+  left: 50%;
+  z-index: -1;
+  transform: translateX(-50%);
+  opacity: 0.3;
+}
+.link:hover::after {
+  opacity: 1;
+}
+/* PINK GLASS */
+.pink-glass .link::after {
+  background-color: var(--soft-red);
+}
+
+.pink-glass h2 {
+  font-size: 2rem;
+  padding: 3.875rem 1.125rem 1.5rem 1.125rem;
+}
+.pink-glass .text {
+  padding: 0 1.25rem;
+}
+/* TWO BACKGROUND IMAGES */
+.graphic-design {
+  background: url("../images/mobile/image-graphic-design.jpg") no-repeat;
+  background-size: cover;
+}
+.photography {
+  background: url("../images/mobile/image-photography.jpg") no-repeat;
+  background-size: cover;
+}
+.graphic-photography {
+  color: var(--dark-blue);
+}
+.graphic-photography h2 {
+  color: var(--dark-desaturated-cyan);
+
+  padding-top: 24.75rem;
+  font-size: 1.75rem;
+  /* font-weight: 900; */
+}
+.graphic-photography p {
+  font-family: "Barlow", sans-serif;
+  margin-top: 0rem;
+  text-align: center;
+  font-weight: 600;
+  padding: 0 0.75rem;
+  line-height: 1.6875rem;
+  padding-bottom: 3.75rem;
+}
+.photography h2 {
+  color: var(--dark-blue);
+}
+.photography p {
+  color: var(--dark-blue);
+}
+
+/* TESTIMONIAL */
+.testimonial {
+  padding: 0 23px;
+  text-align: center;
+}
+.testimonial h2 {
+  color: var(--grayish-blue);
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.25rem;
+  padding-top: 3.4375rem;
+  padding-bottom: 0;
+  margin-bottom: -0.9375rem;
+}
+.testimonial__image {
+  border-radius: 50%;
+  width: 4.5rem;
+  margin: 4.375rem auto 1.875rem auto;
+  display: block;
+}
+.testimonial__text {
+  color: var(--very-dark-grayish-blue);
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  line-height: 2rem;
+  font-size: 18px;
+  margin-bottom: 2.1875rem;
+}
+.testimonial h3 {
+  font-size: 1.125rem;
+  color: var(--very-dark-desaturated-blue);
+  font-weight: 900;
+}
+.testimonial__comment span {
+  display: block;
+  color: var(--grayish-blue);
+  font-weight: 600;
+  font-size: 0.875rem;
+  font-family: "Barlow", sans-serif;
+  margin-top: 1rem;
+}
+.testimonial__comment:last-child span {
+  margin-bottom: 92px;
+}
+
+/* footer */
+
+.footer__images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(187px, 1fr));
+  grid-template-rows: 1fr 1fr;
+  row-gap: 0;
+}
+.blank {
+  display: block;
 }

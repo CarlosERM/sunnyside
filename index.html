@@ -97,7 +97,7 @@
 
     <section class="graphic-photography">
       <section class="graphic-design">
-        <h2>Graphic design</h2>
+        <h2>Graphic Design</h2>
         <p>
           Great design makes you memorable. We deliver artwork that underscores
           your brand message and captures potential clients’ attention.
@@ -117,7 +117,11 @@
       <h2>Client testimonials</h2>
 
       <section class="testimonial__comment">
-        <img src="./images/image-emily.jpg" alt="Emily" />
+        <img
+          src="./images/image-emily.jpg"
+          alt="Emily"
+          class="testimonial__image"
+        />
 
         <p class="testimonial__text">
           We put our trust in Sunnyside and they delivered, making sure our
@@ -128,18 +132,26 @@
       </section>
 
       <section class="testimonial__comment">
-        <img src="./images/image-thomas.jpg" alt="Thomas" />
+        <img
+          src="./images/image-thomas.jpg"
+          alt="Thomas"
+          class="testimonial__image"
+        />
 
         <p class="testimonial__text">
           Sunnyside’s enthusiasm coupled with their keen interest in our brand’s
           success made it a satisfying and enjoyable experience.
         </p>
-        <h3>Thomas S. Chief</h3>
-        <span>Operating Officer</span>
+        <h3>Thomas S.</h3>
+        <span>Chief Operating Officer</span>
       </section>
 
       <section class="testimonial__comment">
-        <img src="./images/image-jennie.jpg" alt="Jennie" />
+        <img
+          src="./images/image-jennie.jpg"
+          alt="Jennie"
+          class="testimonial__image"
+        />
 
         <p class="testimonial__text">
           Incredible end result! Our sales increased over 400% when we worked
@@ -151,7 +163,70 @@
     </section>
 
     <footer class="footer">
-      <section class="footer__images"></section>
+      <section class="footer__images">
+        <picture class="footer__milk">
+          <source
+            media="(max-width: 799px)"
+            srcset="./images/mobile/image-gallery-milkbottles.jpg"
+          />
+          <source
+            media="(min-width: 800px)"
+            srcset="./images/mobile/image-gallery-milkbottles.jpg"
+          />
+          <img
+            src="./images/mobile/image-gallery-milkbottles.jpg"
+            alt="a pink glass"
+            class="blank"
+          />
+        </picture>
+
+        <picture class="footer__orange">
+          <source
+            media="(max-width: 799px)"
+            srcset="./images/mobile/image-gallery-orange.jpg"
+          />
+          <source
+            media="(min-width: 800px)"
+            srcset="./images/mobile/image-gallery-orange.jpg"
+          />
+          <img
+            src="./images/mobile/image-gallery-orange.jpg"
+            alt="a pink glass"
+            class="blank"
+          />
+        </picture>
+
+        <picture class="footer__cone">
+          <source
+            media="(max-width: 799px)"
+            srcset="./images/mobile/image-gallery-cone.jpg"
+          />
+          <source
+            media="(min-width: 800px)"
+            srcset="./images/mobile/image-gallery-cone.jpg"
+          />
+          <img
+            src="./images/mobile/image-gallery-cone.jpg"
+            alt="a pink glass"
+            class="blank"
+          />
+        </picture>
+        <picture class="footer__sugar">
+          <source
+            media="(max-width: 799px)"
+            srcset="./images/mobile/image-gallery-sugar-cubes.jpg"
+          />
+          <source
+            media="(min-width: 800px)"
+            srcset="./images/mobile/image-gallery-sugar-cubes.jpg"
+          />
+          <img
+            src="./images/mobile/image-gallery-sugar-cubes.jpg"
+            alt="a pink glass"
+            class="blank"
+          />
+        </picture>
+      </section>
       <ul class="footer-nav">
         <li><a href="">About</a></li>
         <li><a href="">Services</a></li>
