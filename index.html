@@ -32,11 +32,23 @@
     <section class="top">
       <nav class="top__navigation">
         <img src="./images/logo.svg" alt="sunnyside" class="navigation__logo" />
-        <img
-          src="./images/icon-hamburger.svg"
-          alt=""
-          class="navigation__hamburguer menus"
-        />
+
+        <div class="top__mobile-menu" data-dropdown>
+          <img
+            src="./images/icon-hamburger.svg"
+            alt=""
+            class="navigation__hamburguer"
+          />
+
+          <div class="hidden-menu">
+            <ul class="mobile-menu__nav">
+              <li class=""><a href="#">About</a></li>
+              <li class=""><a href="#">Services</a></li>
+              <li class=""><a href="#">Projects</a></li>
+            </ul>
+            <button class="">Contact</button>
+          </div>
+        </div>
 
         <ul class="top__navlinks">
           <li><a href="">About</a></li>
@@ -45,15 +57,6 @@
           <li><a href="">Contact</a></li>
         </ul>
       </nav>
-
-      <div class="top__mobile-menu menus">
-        <ul class="mobile-menu__nav menus">
-          <li class="menus"><a href="#">About</a></li>
-          <li class="menus"><a href="#">Services</a></li>
-          <li class="menus"><a href="#">Projects</a></li>
-        </ul>
-        <button class="menus">Contact</button>
-      </div>
 
       <h1 class="title">We are creatives</h1>
       <img class="top__arrow" src="./images/icon-arrow-down.svg" alt="" />

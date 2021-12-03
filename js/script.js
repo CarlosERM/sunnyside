@@ -1,23 +1,34 @@
-const burgerButton = document.querySelector(".navigation__hamburguer");
-const menu = document.querySelector(".top__mobile-menu");
-const events = ["ontouch", "click"];
+const menu = document.querySelectorAll("[data-dropdown]");
+
 function handleClick(event) {
   event.preventDefault();
-  menu.classList.toggle("active");
-  //   outsideClick(menu, () => {
-  //     menu.classList.remove("active");
-  //   });
+  this.classList.add("active");
+  outsideClick(this, ["touchstart", "click"], () => {
+    this.classList.remove("active");
+  });
 }
 
-// function outsideClick(element1, callback) {
-//   const html = document.documentElement;
-//   html.addEventListener("click", handleOutsideClick);
+function outsideClick(element, events, callback) {
+  const html = document.documentElement;
+  const outside = "data-outside";
+  if (!element.hasAttribute(outside)) {
+    html.addEventListener("click", handleOutsideClick);
+    element.setAttribute(outside, "");
+  }
 
-//   function handleOutsideClick(event) {
-//     console.log(event.target);
-//   }
-// }
+  function handleOutsideClick(event) {
+    if (!element.contains(event.target)) {
+      element.removeAttribute(outside);
+      events.forEach((userEvent) => {
+        html.removeEventListener(userEvent, handleOutsideClick);
+      });
+      callback();
+    }
+  }
+}
 
-events.forEach((event) => {
-  burgerButton.addEventListener(event, handleClick);
+menu.forEach((m) => {
+  ["touchstart", "click"].forEach((userEvent) => {
+    m.addEventListener(userEvent, handleClick);
+  });
 });
