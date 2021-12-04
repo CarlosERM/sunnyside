@@ -409,4 +409,76 @@ h2 {
   .photography {
     flex: 1 1 0px;
   }
+  /* MENU */
+  .navigation__hamburguer {
+    display: none;
+  }
+  .hidden-menu {
+    display: block;
+    background: transparent;
+    margin-top: 0;
+  }
+  .mobile-menu__nav {
+    flex-direction: row;
+    justify-content: end;
+    margin-bottom: 0;
+    padding-top: 2rem;
+    padding-right: 10rem;
+    color: white;
+  }
+  .mobile-menu__nav li a {
+    color: white;
+  }
+  .hidden-menu button {
+    position: absolute;
+    margin: 0;
+    top: 20px;
+    right: 0;
+    padding: 0.7rem 1.5rem;
+    background: white;
+  }
+  .hidden-menu::before {
+    display: none;
+  }
+}
+
+@media all and (min-width: 1100px) {
+  .top__navigation {
+    padding: 2.9rem 1.5625rem;
+  }
+  .navigation__logo {
+    width: 10.7rem;
+    margin-left: 1rem;
+  }
+  .hidden-menu {
+    height: 0px;
+  }
+  .hidden-menu button {
+    padding: 1.1rem 1.8rem;
+    top: 2.1875rem;
+    right: -2.8rem;
+  }
+  .mobile-menu__nav {
+    padding-top: 3.1875rem;
+    padding-right: 8.5rem;
+    gap: 2.9rem;
+  }
+  .title {
+    font-size: 3.45rem;
+    letter-spacing: 0.625rem;
+    margin-top: 5rem;
+    /* margin-bottom: 12.75rem; */
+  }
+  .top__arrow {
+    margin-top: 6.32rem;
+    padding-bottom: 20.625rem;
+  }
+  /* especial */
+  .title2 {
+    font-size: 2.5rem;
+  }
+  .special-text {
+    width: 26.875rem;
+    height: 16.875rem;
+  }
 }
